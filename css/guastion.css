@@ -1,0 +1,95 @@
+/*ANIMATION*/
+.circle_g {
+    position: absolute;
+    background-color: rgba(90, 103, 185, 0.5);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    animation: moveCircle 10s infinite linear;
+}
+
+@keyframes moveCircle {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: calc(100% - 600px); }
+    50% { top: calc(100% - 600px); left: calc(100% - 600px); }
+    75% { top: calc(100% - 600px); left: 0; }
+    100% { top: 0; left: 0; }
+}
+
+.circle2_g {
+    position: absolute;
+    background-color: rgba(90, 103, 185, 0.5);
+    z-index: -5;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: moveCircle2 8s infinite ease-in-out;
+}
+
+@keyframes moveCircle2 {
+    0% { top: calc(50% - 200px); left: calc(50% - 200px); }
+    25% { top: 0; left: 0; }
+    50% { top: calc(100% - 400px); left: calc(100% - 400px); }
+    75% { top: 0; left: calc(100% - 400px); }
+    100% { top: calc(50% - 200px); left: calc(50% - 200px); }
+}
+
+
+
+
+.rectungle_g1 {
+    margin-top: 150px;
+    margin-left: 200px;
+    padding: 50px;
+    width: 700px;
+    height: 250px;
+    background-color: rgba(90, 103, 185, 0.5);
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 60px;
+}
+.triangle_1 {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent; /* Змініть розміри, якщо потрібно */
+    border-right: 50px solid transparent; /* Змініть розміри, якщо потрібно */
+    border-top: 60px solid  rgba(90, 103, 185, 0.5); /* Змініть розміри та колір, якщо потрібно */
+    margin-left: 260px;
+}
+
+
+.rectungle_g2{
+    width: 700px;
+    height: 250px;
+    background-color: rgba(90, 103, 185, 0.5);
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 60px;
+    padding: 50px;
+    margin-left: 700px;
+}
+.triangle_2{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent; /* Змініть розміри, якщо потрібно */
+    border-right: 20px solid transparent; /* Змініть розміри, якщо потрібно */
+    border-top: 60px solid  rgba(90, 103, 185, 0.5); /* Змініть розміри та колір, якщо потрібно */
+    margin-left: 1270px;
+}
+
+
+.rectungle_g3{
+    margin-left: 200px;
+    padding: 50px;
+    width: 900px;
+    height: 250px;
+    background-color: rgba(90, 103, 185, 0.5);
+    font-size: 20px;
+    color: antiquewhite;
+    border-radius: 60px;
+}
+
+
+
+

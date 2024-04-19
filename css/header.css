@@ -1,0 +1,55 @@
+.text_header{
+    font-size: 25px;
+    color: antiquewhite;
+    margin: 50px 400px 0 100px;
+}
+.title_h1{
+    font-size: 70px;
+    line-height: 80px;
+    margin-top: 36px;
+    margin-right: -200px;
+}
+.text_top{
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 36px;
+    margin-right: 450px;
+}
+
+
+/*ANIMATION*/
+.circle {
+    position: absolute;
+    background-color: rgba(90, 103, 185, 0.5);
+    z-index: -5;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    animation: moveCircle 10s infinite linear;
+}
+
+@keyframes moveCircle {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: calc(100% - 600px); }
+    50% { top: calc(100% - 600px); left: calc(100% - 600px); }
+    75% { top: calc(100% - 600px); left: 0; }
+    100% { top: 0; left: 0; }
+}
+
+.circle2 {
+    position: absolute;
+    background-color: rgba(90, 103, 185, 0.5);
+    z-index: -5;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    animation: moveCircle2 8s infinite ease-in-out;
+}
+
+@keyframes moveCircle2 {
+    0% { top: calc(50% - 200px); left: calc(50% - 200px); }
+    25% { top: 0; left: 0; }
+    50% { top: calc(100% - 400px); left: calc(100% - 400px); }
+    75% { top: 0; left: calc(100% - 400px); }
+    100% { top: calc(50% - 200px); left: calc(50% - 200px); }
+}
